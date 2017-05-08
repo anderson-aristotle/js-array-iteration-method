@@ -11,7 +11,7 @@
 By the end of this talk, developers should be able to:
 
 -   Write callbacks to pass to array methods
--   Write functions to emulate array methods
+-   Call array methods and pass callback as an argument
 -   Write functions using array methods to add functionality.
 
 ## Preparation
