@@ -72,8 +72,7 @@ Arrow functions:
 We'll explore the array methods that allow us to test and transform arrays more
 simply and consistently, [Iteration
 methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods),
-and we'll model some of these JavaScript Array methods as functions.  Building
-models of these methods helps us understand their functionality.
+and optionally at the end, we'll model some of these JavaScript Array methods as functions.  Being able to use these methods correctly is our main goal.
 
 We'll check our work in `node` or using the scripts in `bin/`.
 
@@ -84,7 +83,7 @@ There are two main groups of array iteration methods:
 
 ### Processing all array elements
 
-#### Demo: modeling and using `forEach`
+#### Demo: using `forEach`
 
 The
 [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
@@ -103,7 +102,7 @@ From the MDN documentation:
 This means that `forEach` is a poor choice for an array operation that may
 terminate early.
 
-#### Code along: modeling and using `map`
+#### Code along: using `map`
 
 The
 [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
@@ -113,29 +112,17 @@ elements of the new array are set to the return value of the callback passed to
 argument (e.g. `newArray[i] = callback(array[i])`).  The array `map` is called
 upon is **not** mutated.
 
-Because `map` must access all of the elements of the array, we'll implement our
-model of it in terms of `forEach`.
-
-After we build our version of `map`, we'll test and compare it against the built
-in version.
-
-#### Annotate along: modeling and using `reduce`
+#### Annotate along: using `reduce`
 
 The
 [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 method returns a single value from operating on all the values in the array.  It
 "reduces" many to one. The original array does not change.
 
-Because `reduce` must access all of the elements of the array, our
-implementation uses `forEach`.
-
 The key to **using** `reduce` properly is to methodically walk-through the
 "How reduce works" section at the above link.
 
-After we annotate our version of `reduce`, we'll test and compare it against the
-built in version.
-
-#### Lab: modeling and using `filter`
+#### Lab: using `filter`
 
 The
 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
@@ -147,28 +134,17 @@ array.
 
 Callbacks passed to `filter` should be predicate functions.
 
-#### Code along: Adding functionality - count
-
-`Array.prototype.length` tells us the number of elements in the array.  But what
-if we want to know the number of elements that pass a certain test?
-
-We'll build a function that counts the elements in an array for which a
-predicate callback returns `true`.
-
-#### Optional Lab: modeling and using `reduceRight`
+#### Optional Lab: using `reduceRight`
 
 The [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
 method is functionally equivalent to using `reduce` on the array returned by
 the `reverse` JavaScript Array method.
 
-Hint:  Start by writing `forEachRight` (similar to forEach but iterating from
-the last element (at index `length-1`) through the first (at index 0).
-
 How would the results of calling `reduceRight` differ from calling `reduce`?
 
 ### Processing a subset of the array elements
 
-#### Demo: modeling and using `findIndex`
+#### Demo: using `findIndex`
 
 The
 [findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
@@ -178,16 +154,14 @@ callback returns true.
 Why do we need `findIndex`?  Why not just use
 [indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)?
 
-#### Code along: modeling and using `find`
+#### Code along: using `find`
 
 The
 [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 method returns the first element in the array for which the callback returns
 true.
 
-Can we build `find` using `findIndex`?
-
-#### Code along: modeling and using `some`
+#### Code along: using `some`
 
 The
 [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
@@ -195,9 +169,7 @@ method return true if the callback returns `true` for any element of the array.
 
 Callbacks passed to `some` should be predicate functions.
 
-Can we build `some` using `findIndex`?
-
-#### Lab: modeling and using `every`
+#### Lab: using `every`
 
 The [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 method checks to see if all elements of the array meet some test.  The function
@@ -206,7 +178,56 @@ often called a predicate.
 
 Callbacks passed to `every` should be predicate functions.
 
-Can we build `every` using `findIndex`?  Using `some`?
+### Additional Labs: Dive deeper and build your own array iteration methods
+
+#### Lab: Adding functionality - count
+
+`Array.prototype.length` tells us the number of elements in the array.  But what
+if we want to know the number of elements that pass a certain test?
+
+We'll build a function that counts the elements in an array for which a
+predicate callback returns `true`.
+
+#### Lab: modeling `forEach`
+
+Write your own `myForEach` method that accomplishes
+what `forEach` does.  HINT:  use `for` loop
+
+#### Lab: modeling `map`
+
+Write your own `myMap` method that accomplishes
+what `map` does.  HINT:  use `forEach` method
+
+#### Lab: modeling `reduce`
+
+Write your own `myReduce` method that accomplishes
+what `reduce` does.  HINT:  use `forEach` method
+
+#### Lab: modeling `filter`
+
+Write your own `myFilter` method that accomplishes
+what `filter` does.  HINT:  use `forEach` method
+
+#### Lab: modeling `reduceRight`
+
+Write your own `myReduceRight` method that accomplishes what `reduceRight` does.
+HINT:  start by writing `forEachRight` (similar to `forEach` but iterating from
+the last element (at index length-1) through the first (at index 0).
+
+#### Lab: modeling `find`
+
+Write your own `myFind` method that accomplishes
+what `find` does.  HINT:  use `findIndex` method
+
+#### Lab: modeling `some`
+
+Write your own `mySome` method that accomplishes
+what `some` does.  HINT:  use `findIndex` method
+
+#### Lab: modeling `every`
+
+Write your own `myEvery` method that accomplishes
+what `every` does.  HINT:  can we use `findIndex` or `some` method?
 
 ## Additional Resources
 
