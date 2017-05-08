@@ -112,7 +112,7 @@ elements of the new array are set to the return value of the callback passed to
 argument (e.g. `newArray[i] = callback(array[i])`).  The array `map` is called
 upon is **not** mutated.
 
-#### Annotate along: using `reduce`
+#### Code along: using `reduce`
 
 The
 [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
