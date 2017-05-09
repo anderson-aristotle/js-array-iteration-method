@@ -2,10 +2,14 @@
 'use strict'
 
 const examples = require('../lib/examples')
-const forEach = require('../lib/for-each.js')
 
-const workingArray = examples.numbers.whole
+// Starting array
+const developers = examples.names // ['Mike', 'Toni', 'Ben']
 
-forEach(workingArray, (e, i, a) => {
-  console.log(e, i, a === workingArray)
-})
+// Iterate using FOR loop to print 'Hello <name>' for each student in array
+for (let i = 0; i < developers.length; i++) {
+  console.log('Hello ' + developers[i])
+}
+
+// 1.  Iterate using forEach method
+// DEMO CODE GOES HERE

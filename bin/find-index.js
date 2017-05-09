@@ -2,10 +2,13 @@
 'use strict'
 
 const examples = require('../lib/examples')
-const findIndex = require('../lib/find-index.js')
 
-const workingArray = examples.numbers.whole
+// Starting array
+const ages = examples.numbers.ages // [7, 24, 21, 18, 22]
 
-const result = findIndex(workingArray, (e, i, a) => e === 7)
+// Use indexOf to find the position of 21
+ages.indexOf(21) // 2
 
-console.log('findIndex result', result)
+// 1. Use findIndex to find the position of first age over 21
+// using a predicate function called isAdult
+// DEMO CODE GOES HERE
