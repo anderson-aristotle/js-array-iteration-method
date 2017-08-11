@@ -32,6 +32,8 @@ functions.
 We often use predicate functions, functions returning either `true` or `false`,
 as callbacks.
 
+See [bin/callbacks.js](bin/callbacks.js) for an example.
+
 ## Arrow Functions
 
 We frequently use `arrow` (sometimes referred to as `fat arrow`) functions as
