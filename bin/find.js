@@ -16,6 +16,7 @@ ages.find(isAdult) // 24
 // 1.  Find the first country that launched 20 or less rockets
 // using a predicate function called isCalm
 const rockets = examples.rockets
+console.log(rockets)
 // const rockets = [
 //     { country: 'Russia', launches: 32 },
 //     { country: 'US', launches: 23 },

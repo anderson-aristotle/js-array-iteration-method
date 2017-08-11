@@ -12,6 +12,6 @@ takesCallback(function () {
   console.log('in anonymous function')
 })
 
-takesCallback( () => {
+takesCallback(() => {
   console.log('in anonymous arrow function')
 })

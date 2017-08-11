@@ -11,6 +11,7 @@ const isOdd = (num) => {
   return num % 2
 }
 const odds = nums.filter(isOdd)
+console.log(odds)
 
 // 1.  Filter for odd elements in an array using anonymous arrow function
 // LAB CODE GOES HERE
@@ -18,6 +19,7 @@ const odds = nums.filter(isOdd)
 // 2.  Filter for only countries that launched 20+ rockets
 // using a predicate function called isAggressive
 const rockets = examples.rockets
+console.log(rockets)
 // const rockets = [
 //     { country: 'Russia', launches: 32 },
 //     { country: 'US', launches: 23 },
