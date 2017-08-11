@@ -32,6 +32,8 @@ functions.
 We often use predicate functions, functions returning either `true` or `false`,
 as callbacks.
 
+See [bin/callbacks.js](bin/callbacks.js) for an example.
+
 ## Arrow Functions
 
 We frequently use `arrow` (sometimes referred to as `fat arrow`) functions as
@@ -127,10 +129,7 @@ The key to **using** `reduce` properly is to methodically walk-through the
 The
 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 method returns a **new** array containing elements from the original array for
-which the callback returns `true`.  The length of the new array may be 0, the
-callback returned `false` for every element, or equal to the length of the
-original array, the callback returned `true` for every element in the original
-array.
+which the callback returns `true`.  `filter` uses a predicate callback method to decide on which elements to add to the new array that it returns. The length of the new array may be 0 if the callback returned `false` for every element, or equal to the length of the original array, if the callback returned `true` for every element in the original array.
 
 Callbacks passed to `filter` should be predicate functions.
 
