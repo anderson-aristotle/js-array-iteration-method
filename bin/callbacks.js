@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+'use strict'
+
 const isTheCallback = function () {
   console.log('in isTheCallback')
 }
