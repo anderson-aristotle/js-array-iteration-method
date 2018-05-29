@@ -13,7 +13,7 @@ const isAdult = (age) => {
 }
 ages.find(isAdult) // 24
 
-// 1.  Find the first food that less than 20 days old
+// 1.  Find the first food that more than 20 days old
 // using a predicate function called isRotten
 const fridge = examples.fridge
 // [

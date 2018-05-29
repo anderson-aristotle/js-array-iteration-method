@@ -16,7 +16,7 @@ console.log(odds)
 // 1.  Filter for odd elements in an array using anonymous arrow function
 // LAB CODE GOES HERE
 
-// 2.  Filter for only food that is less than 20 days old
+// 2.  Filter for only food that is more than 20 days old
 // using a predicate function called isRotten
 const fridge = examples.fridge
 // [

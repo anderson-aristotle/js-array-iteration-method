@@ -3,7 +3,7 @@
 
 const examples = require('../data/examples')
 
-// 1.  Check if some of the foods are 20 days old or more
+// 1.  Check if some of the foods more than 20 days old
 // using a predicate function called isRotten
 const fridge = examples.fridge
 // [
