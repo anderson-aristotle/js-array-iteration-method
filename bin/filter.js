@@ -16,16 +16,16 @@ console.log(odds)
 // 1.  Filter for odd elements in an array using anonymous arrow function
 // LAB CODE GOES HERE
 
-// 2.  Filter for only countries that launched 20+ rockets
-// using a predicate function called isAggressive
-const rockets = examples.rockets
-console.log(rockets)
-// const rockets = [
-//     { country: 'Russia', launches: 32 },
-//     { country: 'US', launches: 23 },
-//     { country: 'China', launches: 16 },
-//     { country: 'Europe(ESA)', launches: 7 },
-//     { country: 'India', launches: 4 },
-//     { country: 'Japan', launches: 3 }
+// 2.  Filter for only food that is less than 20 days old
+// using a predicate function called isRotten
+const fridge = examples.fridge
+// [
+//     { food: 'Carrots', age: 32 },
+//     { food: 'Onions', age: 23 },
+//     { food: 'Bell Peppers', age: 16 },
+//     { food: 'Soda', age: 7 },
+//     { food: 'Pizza', age: 4 },
+//     { food: 'Cake', age: 3 }
 // ]
+
 // LAB CODE GOES HERE

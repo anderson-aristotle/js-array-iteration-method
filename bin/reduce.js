@@ -20,17 +20,16 @@ console.log(largest)
 // 2.  Find the largest of all elements in an array using named arrow function
 // CODE ALONG CODE GOES HERE
 
-// 3.  Find the total number of rockets launched in an array
+// 3.  Find the total number of food days of all the food in the fridge
 // using anonymous arrow function
 // start the count with 0
-const rockets = examples.rockets
-console.log(rockets)
-// const rockets = [
-//     { country: 'Russia', launches: 32 },
-//     { country: 'US', launches: 23 },
-//     { country: 'China', launches: 16 },
-//     { country: 'Europe(ESA)', launches: 7 },
-//     { country: 'India', launches: 4 },
-//     { country: 'Japan', launches: 3 }
+const fridge = examples.fridge
+// [
+//     { food: 'Carrots', age: 32 },
+//     { food: 'Onions', age: 23 },
+//     { food: 'Bell Peppers', age: 16 },
+//     { food: 'Soda', age: 7 },
+//     { food: 'Pizza', age: 4 },
+//     { food: 'Cake', age: 3 }
 // ]
 // CODE ALONG CODE GOES HERE
