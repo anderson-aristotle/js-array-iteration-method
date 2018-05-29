@@ -62,12 +62,10 @@ There are a few caveats.
 
 Arrow functions:
 
--   cannot use
-    [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
-    (trying generates: `ReferenceError: arguments is not defined`).
 -   **cannot** be used as a Constructor (`new` does not bind `this`, no
     `prototype` property).
 -   always have a lexically bound `this` (we'll learn more about that later).
+-   cannot use `arguments` key word ([learn more about `arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments))
 
 ## Array Iteration Methods
 
