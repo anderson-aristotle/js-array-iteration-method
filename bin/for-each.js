@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../lib/examples')
+const examples = require('../data/examples')
 
 // Starting array
 const developers = examples.names // ['Mike', 'Toni', 'Ben']

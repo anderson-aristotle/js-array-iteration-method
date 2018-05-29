@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../lib/examples')
+const examples = require('../data/examples')
 
 // Example array
 const nums = examples.numbers.whole // [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]

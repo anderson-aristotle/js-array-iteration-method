@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../lib/examples')
+const examples = require('../data/examples')
 
 // 1.  Check if some of the countries have launched 20 or more rockets
 // using a predicate function called isAggressive
