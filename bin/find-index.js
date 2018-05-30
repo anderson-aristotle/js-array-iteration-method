@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../data/examples')
-
 // Starting array
-const ages = examples.numbers.ages // [7, 24, 21, 18, 22]
+const ages = [7, 24, 21, 18, 22]
 
 // Use indexOf to find the position of 21
 ages.indexOf(21) // 2

@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../data/examples')
-
 // Starting array
-const developers = examples.names // ['Mike', 'Toni', 'Jessica']
+const developers = ['Mike', 'Toni', 'Jessica']
 
 // Iterate using FOR loop to create an array of 'Hello <name>' for each student
 // Original array unchanged
