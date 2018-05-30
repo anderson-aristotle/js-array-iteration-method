@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const examples = require('../lib/examples')
-
 // Example array
-const nums = examples.numbers.whole // [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+const nums = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 // Filter for odd elements in an array using predicate function
 const isOdd = (num) => {
@@ -16,16 +14,15 @@ console.log(odds)
 // 1.  Filter for odd elements in an array using anonymous arrow function
 // LAB CODE GOES HERE
 
-// 2.  Filter for only countries that launched 20+ rockets
-// using a predicate function called isAggressive
-const rockets = examples.rockets
-console.log(rockets)
-// const rockets = [
-//     { country: 'Russia', launches: 32 },
-//     { country: 'US', launches: 23 },
-//     { country: 'China', launches: 16 },
-//     { country: 'Europe(ESA)', launches: 7 },
-//     { country: 'India', launches: 4 },
-//     { country: 'Japan', launches: 3 }
-// ]
+// 2.  Filter for only food that is more than 20 days old
+// using a predicate function called isRotten
+const fridge = [
+     { food: 'Carrots', daysInFridge: 32 },
+     { food: 'Onions', daysInFridge: 23 },
+     { food: 'Bell Peppers', daysInFridge: 16 },
+     { food: 'Soda', daysInFridge: 7 },
+     { food: 'Pizza', daysInFridge: 4 },
+     { food: 'Cake', daysInFridge: 3 }
+ ]
+
 // LAB CODE GOES HERE

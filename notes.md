@@ -12,4 +12,12 @@
   - Two ways to use: with `{}`, which in regard to return works same as other js functions. And without `{}`, which leads to implicit return.
   - Reinforce that a javascript function normally returns undefined unless you specify `return ...`
 
-### Array Iteration Methods
+### Vocab
+![vocab]](https://git.generalassemb.ly/storage/user/3667/files/26606f1a-9e1d-11e7-9754-833f09c04f70)
+
+### Whiteboard Summary of Goals
+
+![lesson goals](https://git.generalassemb.ly/storage/user/3667/files/d9c3ad82-2de3-11e8-81af-50a414f375af)
+
+### How to whiteboard array iteration
+![How to whiteboard array iteration](https://git.generalassemb.ly/storage/user/3667/files/ea6d448c-9486-11e7-9f58-c1fad594c660)
