@@ -13,9 +13,10 @@
   - Reinforce that a javascript function normally returns undefined unless you specify `return ...`
 
 ### Vocab
-![vocab]](https://git.generalassemb.ly/storage/user/3667/files/26606f1a-9e1d-11e7-9754-833f09c04f70)
+![vocab](https://git.generalassemb.ly/storage/user/3667/files/26606f1a-9e1d-11e7-9754-833f09c04f70)
 
 ### Whiteboard Summary of Goals
+![lesson-goals-1](https://media.git.generalassemb.ly/user/3667/files/db64b762-2de3-11e8-91fb-5019769980da)
 
 ![lesson goals](https://git.generalassemb.ly/storage/user/3667/files/d9c3ad82-2de3-11e8-81af-50a414f375af)
 
