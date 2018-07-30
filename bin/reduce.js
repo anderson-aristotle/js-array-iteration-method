@@ -21,13 +21,14 @@ console.log(largest)
 // 3.  Find the total number of days in fridge for all the food in the fridge
 // using anonymous arrow function
 // start the count with 0
-const fridge = [
-    { food: 'Carrots', daysInFridge: 32 },
-    { food: 'Onions', daysInFridge: 23 },
-    { food: 'Bell Peppers', daysInFridge: 16 },
-    { food: 'Soda', daysInFridge: 7 },
-    { food: 'Pizza', daysInFridge: 4 },
-    { food: 'Cake', daysInFridge: 3 }
+const fridge = // eslint-disable-line no-unused-vars
+[
+  { food: 'Carrots', daysInFridge: 32 },
+  { food: 'Onions', daysInFridge: 23 },
+  { food: 'Bell Peppers', daysInFridge: 16 },
+  { food: 'Soda', daysInFridge: 7 },
+  { food: 'Pizza', daysInFridge: 4 },
+  { food: 'Cake', daysInFridge: 3 }
 ]
 
 // CODE ALONG CODE GOES HERE

@@ -13,13 +13,14 @@ ages.find(isAdult) // 24
 
 // 1.  Find the first food that more than 20 days old
 // using a predicate function called isRotten
-const fridge = [
-    { food: 'Carrots', daysInFridge: 32 },
-    { food: 'Onions', daysInFridge: 23 },
-    { food: 'Bell Peppers', daysInFridge: 16 },
-    { food: 'Soda', daysInFridge: 7 },
-    { food: 'Pizza', daysInFridge: 4 },
-    { food: 'Cake', daysInFridge: 3 }
+const fridge = // eslint-disable-line no-unused-vars
+[
+  { food: 'Carrots', daysInFridge: 32 },
+  { food: 'Onions', daysInFridge: 23 },
+  { food: 'Bell Peppers', daysInFridge: 16 },
+  { food: 'Soda', daysInFridge: 7 },
+  { food: 'Pizza', daysInFridge: 4 },
+  { food: 'Cake', daysInFridge: 3 }
 ]
 
 // CODE ALONG CODE GOES HERE
