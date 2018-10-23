@@ -4,23 +4,23 @@
 
 ## Prerequisites
 
--   [JavaScript Functions"](https://git.generalassemb.ly/ga-wdi-boston/js-functions)
+- [JavaScript Functions](https://git.generalassemb.ly/ga-wdi-boston/js-functions)
 
 ## Objectives
 
 By the end of this talk, developers should be able to:
 
--   Write callbacks to pass to array methods
--   Call array methods and pass callback as an argument
--   Write functions using array methods to add functionality.
+- Write callbacks to pass to array methods
+- Call array methods and pass callback as an argument
+- Write functions using array methods to add functionality.
 
 ## Preparation
 
-1.  Fork and clone this repository.
+1. Fork and clone this repository.
  [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1. Create a new branch, `training`, for your work.
+1. Checkout to the `training` branch.
+1. Install dependencies with `npm install`.
 
 ## Callbacks
 
@@ -62,24 +62,25 @@ There are a few caveats.
 
 Arrow functions:
 
--   **cannot** be used as a Constructor (`new` does not bind `this`, no
-    `prototype` property).
--   always have a lexically bound `this` (we'll learn more about that later).
--   cannot use `arguments` key word ([learn more about `arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments))
+- **cannot** be used as a Constructor (`new` does not bind `this`, no
+  `prototype` property).
+- always have a lexically bound `this` (we'll learn more about that later).
+- cannot use `arguments` key word ([learn more about `arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments))
 
 ## Array Iteration Methods
 
 We'll explore the array methods that allow us to test and transform arrays more
 simply and consistently, [Iteration
 methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods),
-and optionally at the end, we'll model some of these JavaScript Array methods as functions.  Being able to use these methods correctly is our main goal.
+and optionally at the end, we'll model some of these JavaScript Array methods as
+functions. Being able to use these methods correctly is our main goal.
 
 We'll check our work in `node` or using the scripts in `bin/`.
 
 There are two main groups of array iteration methods:
 
-1.  Those that must process all of the array elements
-1.  Those that may only process a subset of the array elements
+1. Those that must process all of the array elements
+1. Those that may only process a subset of the array elements
 
 ### Processing all array elements
 
@@ -127,7 +128,11 @@ The key to **using** `reduce` properly is to methodically walk-through the
 The
 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 method returns a **new** array containing elements from the original array for
-which the callback returns `true`.  `filter` uses a predicate callback method to decide on which elements to add to the new array that it returns. The length of the new array may be 0 if the callback returned `false` for every element, or equal to the length of the original array, if the callback returned `true` for every element in the original array.
+which the callback returns `true`.  `filter` uses a predicate callback method to
+decide on which elements to add to the new array that it returns. The length of
+the new array may be 0 if the callback returned `false` for every element, or
+equal to the length of the original array, if the callback returned `true` for
+every element in the original array.
 
 Callbacks passed to `filter` should be predicate functions.
 
@@ -228,11 +233,11 @@ what `every` does.  HINT:  can we use `findIndex` or `some` method?
 
 ## Additional Resources
 
--   [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
--   [Array](https://en.wikipedia.org/wiki/Array_data_type)
+- [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+- [Array](https://en.wikipedia.org/wiki/Array_data_type)
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
+   alternative licensing, please contact legal@ga.co.
