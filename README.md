@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [JavaScript Functions"](https://git.generalassemb.ly/ga-wdi-boston/js-functions)
+- [JavaScript Functions](https://git.generalassemb.ly/ga-wdi-boston/js-functions)
 
 ## Objectives
 
