@@ -136,14 +136,6 @@ every element in the original array.
 
 Callbacks passed to `filter` should be predicate functions.
 
-#### Optional Lab: using `reduceRight`
-
-The [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
-method is functionally equivalent to using `reduce` on the array returned by
-the `reverse` JavaScript Array method.
-
-How would the results of calling `reduceRight` differ from calling `reduce`?
-
 ### Processing a subset of the array elements
 
 #### Demo: using `findIndex`
@@ -209,12 +201,6 @@ what `reduce` does.  HINT:  use `forEach` method
 
 Write your own `myFilter` method that accomplishes
 what `filter` does.  HINT:  use `forEach` method
-
-#### Lab: modeling `reduceRight`
-
-Write your own `myReduceRight` method that accomplishes what `reduceRight` does.
-HINT:  start by writing `forEachRight` (similar to `forEach` but iterating from
-the last element (at index length-1) through the first (at index 0).
 
 #### Lab: modeling `find`
 
