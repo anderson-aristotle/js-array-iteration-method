@@ -113,16 +113,6 @@ elements of the new array are set to the return value of the callback passed to
 argument (e.g. `newArray[i] = callback(array[i])`).  The array `map` is called
 upon is **not** mutated.
 
-#### Code along: using `reduce`
-
-The
-[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-method returns a single value from operating on all the values in the array.  It
-"reduces" many to one. The original array does not change.
-
-The key to **using** `reduce` properly is to methodically walk-through the
-"How reduce works" section at the above link.
-
 #### Lab: using `filter`
 
 The
@@ -171,6 +161,18 @@ used for this should only return `true` or `false`.  This type of function is
 often called a predicate.
 
 Callbacks passed to `every` should be predicate functions.
+
+### Processing all array elements with an accumulator
+
+#### Code along: using `reduce`
+
+The
+[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+method returns a single value from operating on all the values in the array.  It
+"reduces" many to one. The original array does not change.
+
+The key to **using** `reduce` properly is to methodically walk-through the
+"How reduce works" section at the above link.
 
 ### Additional Labs: Dive deeper and build your own array iteration methods
 
