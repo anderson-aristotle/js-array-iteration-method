@@ -40,25 +40,70 @@ We frequently use `arrow` (sometimes referred to as `fat arrow`) functions as
 callbacks with array iteration methods.  This is convenient when the callback is
 simple and anonymous.
 
+### Code Along: Rewriting Functions Using Arrow Syntax
+Let's rewrite the following functions as arrow functions in [bin/arrow-functions.js](bin/arrow-functions.js)
+
+#### How to Convert to Arrow Syntax
+We can convert an existing JavaScript function to use the arrow syntax with the following steps.
+
+1. Remove the `function` keyword
+2. Add a fat arrow (`=>`) between the function parameters  `()` and the opening brace `{`
+
+```js
+// Without arrow syntax
+const helloWorld = function () {
+  console.log('Hello World!')
+}
+
+// Using arrow syntax
+const helloWorld = () => {
+  console.log('Hello World!')
+}
+```
+
+##### Single Expression Implicit Return
+
 Arrow functions bodies that are a single expression have an added benefit, an
 implicit return.  This means that arrow function bodies without `{}` return the
 value of the expression without needing to use `return`.
 
-Although the following is true of arrow functions:
-
 ```js
-> typeof () => {}
-'function'
-> typeof (() => true)
-'function'
-> () => {} instanceof Function
-true
-> (() => true) instanceof Function
-true
->
+// Without arrow syntax
+const add = function (x, y) {
+  return x + y
+}
+
+// Using arrow syntax with an explicit return
+const add = (x, y) => {
+  return x + y
+}
+
+// Using arrow syntax with an implicit return
+const add = (x, y) => x + y
 ```
 
-There are a few caveats.
+##### Single Parameter
+When using the arrow function syntax with a single parameter, then parenthesis are not required.
+
+```js
+// Without arrow syntax
+const isPositive = function (num) {
+  return num > 0
+}
+
+// Using arrow syntax with an implicit return value
+const isPositive = (num) => num > 0
+
+// Parenthesis aren't required for a single parameter
+const isPositive = num => num > 0
+```
+
+### Lab: Converting To Arrow Syntax
+Now it's your turn. Convert the function in [bin/arrow-lab.js](bin/arrow-lab.js) to use arrow syntax.
+
+
+### Arrow Function Caveats
+Arrow Functions have a few caveats.
 
 Arrow functions:
 
@@ -113,16 +158,6 @@ elements of the new array are set to the return value of the callback passed to
 argument (e.g. `newArray[i] = callback(array[i])`).  The array `map` is called
 upon is **not** mutated.
 
-#### Code along: using `reduce`
-
-The
-[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-method returns a single value from operating on all the values in the array.  It
-"reduces" many to one. The original array does not change.
-
-The key to **using** `reduce` properly is to methodically walk-through the
-"How reduce works" section at the above link.
-
 #### Lab: using `filter`
 
 The
@@ -135,14 +170,6 @@ equal to the length of the original array, if the callback returned `true` for
 every element in the original array.
 
 Callbacks passed to `filter` should be predicate functions.
-
-#### Optional Lab: using `reduceRight`
-
-The [reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
-method is functionally equivalent to using `reduce` on the array returned by
-the `reverse` JavaScript Array method.
-
-How would the results of calling `reduceRight` differ from calling `reduce`?
 
 ### Processing a subset of the array elements
 
@@ -180,6 +207,18 @@ often called a predicate.
 
 Callbacks passed to `every` should be predicate functions.
 
+### Processing all array elements with an accumulator
+
+#### Code along: using `reduce`
+
+The
+[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+method returns a single value from operating on all the values in the array.  It
+"reduces" many to one. The original array does not change.
+
+The key to **using** `reduce` properly is to methodically walk-through the
+"How reduce works" section at the above link.
+
 ### Additional Labs: Dive deeper and build your own array iteration methods
 
 #### Lab: Adding functionality - count
@@ -209,12 +248,6 @@ what `reduce` does.  HINT:  use `forEach` method
 
 Write your own `myFilter` method that accomplishes
 what `filter` does.  HINT:  use `forEach` method
-
-#### Lab: modeling `reduceRight`
-
-Write your own `myReduceRight` method that accomplishes what `reduceRight` does.
-HINT:  start by writing `forEachRight` (similar to `forEach` but iterating from
-the last element (at index length-1) through the first (at index 0).
 
 #### Lab: modeling `find`
 
